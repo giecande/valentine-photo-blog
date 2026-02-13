@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Memories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>💕 Valentine's Day Memories 💕</h1>
+        <p>Share your love stories through photos</p>
+        <button id="adminBtn" class="admin-btn">Admin Login</button>
+    </header>
+
+    <main>
+        <section class="upload-section" id="uploadSection" style="display: none;">
+            <div class="upload-container">
+                <input type="file" id="photoInput" accept="image/*" multiple>
+                <label for="photoInput" class="upload-btn">
+                    <span>📸 Upload Photos</span>
+                </label>
+                <button id="logoutBtn" class="logout-btn">Logout</button>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <div class="loading">Loading photos...</div>
+        </section>
+    </main>
+
+    <!-- Admin Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Admin Login</h2>
+            <input type="password" id="passwordInput" placeholder="Enter admin password">
+            <button id="loginBtn">Login</button>
+            <p id="loginError" class="error"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

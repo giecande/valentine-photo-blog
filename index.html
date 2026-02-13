@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Memories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>💕 Happy Valentine's Day 💕</h1>
+        <p>Our love stories through photos</p>
+    </header>
+
+    <main>
+        <section class="upload-section">
+            <div class="upload-container">
+                <input type="file" id="photoInput" accept="image/*" multiple>
+                <label for="photoInput" class="upload-btn">
+                    <span>📸 Upload Photos</span>
+                </label>
+                <p class="photo-count">Photos: <span id="photoCount">0</span>/30</p>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <!-- Photos will be dynamically added here -->
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
